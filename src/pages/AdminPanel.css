@@ -1,0 +1,174 @@
+.admin-notice-panel {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-notice-panel h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #0c4a6e;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px rgba(12, 74, 110, 0.3);
+}
+
+.admin-notice-panel .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.admin-notice-panel input[type="text"],
+.admin-notice-panel input[type="email"],
+.admin-notice-panel input[type="password"],
+.admin-notice-panel input,
+.admin-notice-panel textarea {
+  flex: 1 1 300px;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #cbd5e1;
+  font-size: 1.2rem;
+  transition: border-color 0.3s ease;
+}
+
+.admin-notice-panel input:focus,
+.admin-notice-panel textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 8px #2563ebaa;
+}
+
+.admin-notice-panel button {
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+}
+
+.admin-notice-panel .btn-add {
+  background-color: #2563eb;
+  color: white;
+}
+
+.admin-notice-panel .btn-add:hover {
+  background-color: #1e40af;
+  box-shadow: 0 10px 20px rgba(30, 64, 175, 0.5);
+}
+
+.admin-notice-panel .btn-update {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.admin-notice-panel .btn-update:hover {
+  background-color: #b45309;
+  box-shadow: 0 10px 20px rgba(180, 83, 9, 0.5);
+}
+
+.admin-notice-panel .btn-cancel {
+  align-self: center;
+  background: transparent;
+  color: #64748b;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.admin-notice-panel .btn-cancel:hover {
+  color: #1e3a8a;
+}
+
+.admin-notice-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-notice-panel li {
+  background-color: white;
+  border-radius: 14px;
+  padding: 1.8rem 2.2rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: box-shadow 0.3s ease;
+}
+
+.admin-notice-panel li:hover {
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.25);
+}
+
+.admin-notice-panel .notice-info h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #1e3a8a;
+}
+
+.admin-notice-panel .notice-info p {
+  font-size: 1.25rem;
+  color: #334155;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.admin-notice-panel .notice-info .date {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #64748b;
+}
+
+.admin-notice-panel .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 90px;
+  text-align: right;
+}
+
+.admin-notice-panel .actions button {
+  background: none;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 8px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.admin-notice-panel .actions button.edit-btn {
+  color: #2563eb;
+}
+
+.admin-notice-panel .actions button.edit-btn:hover {
+  background-color: #e0e7ff;
+}
+
+.admin-notice-panel .actions button.delete-btn {
+  color: #dc2626;
+}
+
+.admin-notice-panel .actions button.delete-btn:hover {
+  background-color: #fee2e2;
+}
+.admin-notice-panel h2,
+.admin-notice-panel h3 {
+  font-size: inherit; /* or just don't set it */
+}

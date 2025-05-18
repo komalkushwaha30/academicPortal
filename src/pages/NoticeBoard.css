@@ -1,0 +1,70 @@
+.noticeboard-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background: #f0f4f8; /* Light blue background */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(50, 115, 220, 0.15);
+}
+
+.noticeboard-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1e40af; /* Strong royal blue */
+  text-shadow: 1px 1px 4px rgba(30, 64, 175, 0.4);
+}
+
+.no-notice-text {
+  text-align: center;
+  color: #475569; /* Darker slate */
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.notice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.notice-card {
+  background: #2c2e34; /* Strong blue background */
+  color: #f0f4f8; /* Light text */
+  padding: 1.6rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(30, 64, 175, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 8px solid #60a5fa; /* Bright sky blue */
+}
+
+.notice-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(30, 64, 175, 0.5);
+  cursor: pointer;
+  background: #2563eb; /* Slightly lighter blue on hover */
+}
+
+.notice-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #dbeafe; /* Very light blue */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.notice-body {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  color: #bfdbfe; /* Soft light blue */
+}
+
+.notice-date {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #93c5fd; /* Lighter accent blue */
+  text-align: right;
+  font-style: italic;
+}

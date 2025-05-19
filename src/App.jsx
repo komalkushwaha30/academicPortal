@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router";
-import { AuthProvider } from "./contexts/AuthContext";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
@@ -20,7 +20,10 @@ import "./index.css";
 
 function AppContent() {
   const location = useLocation();
+  const { loading } = useAuth(); // <-- use loading from AuthContext
   const hideNavbar = location.pathname === "/" || location.pathname === "/register";
+
+  if (loading) return <div className="container">Loading...</div>; // <-- block rendering until auth is ready
 
   return (
     <>

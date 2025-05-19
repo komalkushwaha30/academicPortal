@@ -1,10 +1,20 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
 .register-container {
   min-height: 100vh;
+  height: 100vh; /* Ensure it covers the full viewport */
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #fde68a, #fcd34d);
   padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent scrolling inside container */
 }
 
 .register-card {
@@ -15,6 +25,7 @@
   width: 100%;
   max-width: 400px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .register-card h2 {
@@ -82,4 +93,14 @@
 
 .login-text a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .register-card {
+    padding: 1.5rem 0.5rem;
+    max-width: 95vw;
+  }
+  .register-container {
+    padding: 0.5rem;
+  }
 }

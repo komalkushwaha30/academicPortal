@@ -38,7 +38,7 @@ export default function Register() {
   return (
     <div className="register-container">
       <div className="register-card">
-        <h2>Create Account ✨</h2>
+        <h2>Create Account </h2>
         <p>Fill in the details to get started</p>
         <form onSubmit={handleRegister} className="register-form">
           <input

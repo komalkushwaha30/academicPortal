@@ -64,6 +64,19 @@
   background-color: #b91c1c;
 }
 
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.profile-icon {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 0.3em;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .menu-toggle {

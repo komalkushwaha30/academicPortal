@@ -1,5 +1,4 @@
 // src/App.jsx
-import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import Login from "./pages/Login";
@@ -15,6 +14,7 @@ import ModuleQuiz from "./pages/ModuleQuiz";
 import PrivateRoute from "./components/PrivateRoute";
 import Navbar from "./components/Navbar";
 import DiscussionZone from "./pages/DiscussionZone";
+import NotFound from "./pages/NotFound";
 
 import "./index.css";
 
@@ -100,6 +100,7 @@ function AppContent() {
               </PrivateRoute>
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </>

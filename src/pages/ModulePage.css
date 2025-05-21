@@ -1,7 +1,9 @@
 .module-container {
+  min-height: 100vh; 
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
+  
 }
 
 .module-title {
@@ -103,4 +105,10 @@
 
 .btn-complete:hover {
   background-color: #059669;
+}
+
+
+html, body {
+  height: auto !important;
+  overflow: auto !important;
 }
